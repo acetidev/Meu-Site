@@ -1,0 +1,422 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;}
+img{width: 100%}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+/* navBar */
+.logoImg{
+    height: 100%;
+    width: 250px;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    font-size: 14px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 35px;
+}
+
+/* Corpo do site */
+.backMobileImg{
+    position: absolute;
+    opacity: 0;
+}
+
+.div1{
+    background-color: black;
+    height: 100vh;
+    /* height: 100%; */
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.div2{
+    background-color: rgb(17, 16, 16);
+    height: 100vh;
+    /* height: 100%; */
+    padding-bottom: 25px;
+}
+.div3{
+    background-color: rgb(17, 16, 16);
+    height: 90vh;
+    /* height: 100%; */
+}
+
+main{
+    background: url(./assets/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+article{
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.head{
+    height: 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: flex-start;
+}
+
+/* edição do texto */
+.numbSection{
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #FF8303;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+h2{
+    margin: 30px;
+    margin-bottom: 75px;
+    font-size: 2.5rem;
+}
+
+span{
+    color: #FF8303;
+    font-weight: bold;
+}
+
+.link{
+    color: #e07f1f;
+    text-decoration:underline;
+}
+
+
+/* Grade de Habilidades */
+
+.container{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.habImg{
+    width: 10vh;
+}
+
+.habObj{
+    width: 50vh;
+}
+
+/* portifolio */
+.port{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.orcamento{
+    background-color:#cf6a05ed;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.orcamento:hover{
+    margin-left: 5px;
+    margin-top: 25px;
+    transition: 0.3s;
+    border: white solid 3px;
+}
+
+/* Contato */
+#like{
+    font-size: 1.5rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    align-content: center;
+    padding-bottom: 50px;
+}
+
+.wpp, .ig, .email, .linkedin{
+    display: flex;
+    align-items: center;
+}
+
+.wpp:hover, .ig:hover, .email:hover, .linkedin:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+
+.socialImg{
+    width: 40px;
+    display: flex;
+    
+}
+
+
+
+
+
+/* responsividade */
+
+/* Nav Mobile */
+main{
+    background-size: cover;
+    background-position: right;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 1025px){
+    
+    .logoImg{
+        height: 100%;
+        width: 350px;
+        display: flex;
+    }
+
+    .div1, .div2, .div3{
+        height: 100%;
+    }
+
+    nav{
+        font-size: 17px;
+    }
+
+    .backMobile{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .backMobileImg{
+        position: static;
+        opacity: 1;
+    }
+
+    
+    p{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    /* habilidade */
+    .container{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -5vh;
+        justify-content: space-around;
+    }
+    
+    .habImg{
+        width: 20%;
+        margin-top: 10vh;
+    }
+
+    h3{
+        font-size: 2.2rem;
+    }
+
+    .habDesc{
+        margin-top: 4vh;
+    }
+
+}
+
+
+@media (max-width: 999px){
+    
+    nav{
+        background-color: rgba(0, 0, 0, 0.815);
+    }
+
+    .nav-list{
+        text-align: left;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        background: rgba(0, 0, 0, 0.582);
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-top: solid 0.2px rgb(87, 84, 84);
+    }
+
+    .nav-list li{
+        opacity: 0;
+        margin-left: 25px;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+
+    body{
+        text-align: center;
+    }
+
+    .numbSection{
+        font-size: 2rem;
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    h2{
+        margin: 30px;
+        margin-bottom: 75px;
+        font-size: 2rem;
+    }
+
+    article{
+        margin: auto;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}
+
+/* Fim do 999px */
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+
+
+
+/* Tablet */
+
+@media (max-width: 770px){
+    
+    .logoImg{
+        height: 100%;
+        width: 250px;
+        display: flex;
+    }
+
+
+@media (max-width: 740px){   
+
+    /* habilidade */
+    .container{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -5vh;
+        justify-content: space-around;
+    }
+
+    .habImg{
+        width: 20%;
+        margin-top: 5vh;    
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .habDesc{
+        margin-top: 4vh;
+    }
+
+    .habObj{
+        width: 90%;
+    }
+}
